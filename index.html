@@ -10,12 +10,56 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+ $(document).ready(function () {
+ $('#wrapper').fadeIn(12000);
+ });
+
+</script>
+    <style type="text/css">
+    a{
+        color:white;
+    }
+    .links {
+        list-style: none;
+        margin-bottom: 1.5em;
+        padding: 0;
+    }
+
+    .links li {
+        padding: 0;
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+    }
+
+    .links li a {
+        border-radius: 5px;
+        border: 0;
+        display: block;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-size: 0.8em;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+        line-height: 1.85em;
+        padding: 0.75em 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+    }
+
+    .links li a:hover {
+        background: #45558d;
+    }
+    </style>
 </head>
+
 <body>
     <!-- Page Wrapper -->
     <div id="page-wrapper">
@@ -23,68 +67,64 @@
         <header id="header" class="alt">
             <h1><a href="index.html"> </a></h1>
             <nav>
-                <a href="#menu">Menu</a>
+                <!-- <a href="#menu">Menu</a> -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style=" background-color: #ffffff00; width: 90px; height: 50px; border-color: white;">Menu</button>
             </nav>
         </header>
-        <!-- Menu -->
-        <nav id="menu">
-            <div class="inner">
-                <h2>Menu</h2>
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="generic.html">Nuestros Productos</a></li>
-                    <li><a href="elements.html">Eventos</a></li>
-                    <li><a href="#">Nuestros Aliados</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Pedidos On-Line</a></li>
-                    <li><a href="#">Contactos</a></li>
-                </ul>
-                <a href="#" class="close">Close</a>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #4c5c96;     width: 50%;    position: relative;    left: 50%;    margin-left: -25%;">
+                    <div class="modal-header" style="    text-align: center;">
+                        <button type="button" class="close" data-dismiss="modal" style="border: none;     width: 14px;    height: 0px;">&times;</button>
+                        <h2 class="modal-title">Menu</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="nuestros-productos.html">Nuestros Productos</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="nuestros-aliados.html">Nuestros Aliados</a></li>
+                            <li><a href="#">Pedidos On-Line</a></li>
+                            <li><a data-target="#carousel-vertical" data-slide-to="5">Contactos</a></li>
+                        </ul>
+                    </div>
+                    </div>
             </div>
-        </nav>
-        <!-- Wrapper -->
-        <section id="wrapper">
-        </section>
+        </div>
+    </div>
+    <!-- Wrapper -->
+    <section id="wrapper">
+    </section>
     </div>
     <div class="carousel slide vertical" id="carousel-vertical" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carousel-vertical" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-vertical" data-slide-to="1"></li>
-            <li data-target="#carousel-vertical" data-slide-to="2"></li>
-            <li data-target="#carousel-vertical" data-slide-to="3"></li>
-            <li data-target="#carousel-vertical" data-slide-to="4"></li>
-            <li data-target="#carousel-vertical" data-slide-to="5"></li>
+            <li data-target="#carousel-vertical" data-slide-to="0" class="active" data-placement="left" data-toggle="tooltip" title="Home"></li>
+            <li data-target="#carousel-vertical" data-slide-to="1" data-toggle="tooltip" title="Seccion 1"></li>
+            <li data-target="#carousel-vertical" data-slide-to="2" data-toggle="tooltip" title="Seccion 2"></li>
+            <li data-target="#carousel-vertical" data-slide-to="3" data-toggle="tooltip" title="Seccion 3"></li>
+            <li data-target="#carousel-vertical" data-slide-to="4" data-toggle="tooltip" title="Seccion 4"></li>
+            <li data-target="#carousel-vertical" data-slide-to="5" data-toggle="tooltip" title="contacto"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <!-- Banner -->
                 <section id="banner">
                     <div class="inner">
-                        <div class="logo"><img src="./images/Logo.jpg" width="100"></span>
-                        </div>
-                        <p align="justify">Somos un grupo de profesionales, emprendedores, que decidimos apostar al país y a su gente. Para ello pondremos al servicio de nuestros clientes todos nuestros conocimientos en el área de mercadeo y servicios, poniendo en práctica lo que para nosotros son nuestros estándares de calidad en cada una de las áreas.</p>
-                        <p align="justify"> <strong>MISION</strong> Hacer que nuestros productos comercializados lleguen a las cadenas más importantes del país. Además que tengan presencia en los puntos de venta y zonas en las que consideramos que su posicionamiento será importante para nuestros clientes. Todo esto de la mano con la seriedad, confiabilidad y calidad de servicio que puedan ayudar a crecer a nuestros clientes y a su vez a Mondo Gourmet.</p>
-                        <p align="justify"> <strong>VALORES</strong> Mondo Gourmet y sus fundadores profesan valores atados a la familia, honestidad, integridad, ética, amabilidad, seriedad, sentido común, proactividad, educación. Pero en Mondo Gourmet tomamos como bandera La Calidad de Servicio, porque no queremos aceptar que en un país tan noble y rico como este no se pueda volver a tener esa calidad de servicio que hace la diferencia</p>
-                        <div class="# align="justify"">
-                            <strong>OBJETIVOS</strong></br>
-                        <ul>
-                            <li>
-                                <p align="justify">Convertirnos en el referente dentro de el mercado de distribuidoras y comercializadoras en cuanto a calidad de servicio.</p>
-                            </li>
-                            <li>
-                                <p align="justify">Brindar a nuestros clientes la mejor experiencia en atención y calidad de servicio con alianzas que generen un desarrollo mutuo, soportados en la construcción de vínculos de confianza.</p>
-                            </li>
-                            <li>
-                                <p align="justify">Respeto y valor a nuestros trabajadores que son el capital más valioso de nuestra organización, otorgándoles el debido reconocimiento como personas dignas y de igual valor y, además, creando un ambiente óptimo para el desarrollo laboral y crecimiento personal y familiar.</p>
-                            </li>
-                            <li>
-                                <p align="justify">Fortalecer las relaciones con nuestros clientes para alcanzar la mayor flexibilidad de negociación en todas nuestras operaciones.</p>
-                            </li>
-                            <li>
-                                <p align="justify">Crecer en nuestro portafolio y servicios que ofrecemos a nuestros clientes con la finalidad de consolidarnos como empresa líder en distribución a nivel nacional e internacional.</p>
-                            </li>
-                        </ul>
-                        </div>
+                        <div class="logo"><img src="./images/Logo.jpg" width="500" style="    position: relative; margin-left: auto;    margin-right: auto;
+    max-width: 100%;
+    "></div>
+                        <nav class="navbar navbar-inverse" style="    position: relative;    margin-left: auto;    margin-right: auto;    max-width: 100%;    background: rgba(255, 0, 0, 0);
+    border: none;">
+  <ul class="nav navbar-nav" style="position: relative;    left: 50%;    margin-left: -15%;">
+    <li><a data-toggle="modal" data-target="#quienessomos" style="    text-decoration: none;    border: none; cursor: pointer;">Quienes Somos</a></li>
+    <li><a data-toggle="modal" data-target="#mision"  style="    text-decoration: none;    border: none; cursor: pointer;">Mision</a></li>
+    <li><a data-toggle="modal" data-target="#valores"  style=" text-decoration: none;    border: none; cursor: pointer;">Valores</a></li>
+    <li><a data-toggle="modal" data-target="#objetivos"  style=" text-decoration: none;    border: none; cursor: pointer;">Objetivos</a></li>
+  </ul>
+</nav>
+
                     </div>
                 </section>
             </div>
@@ -92,7 +132,7 @@
                 <!-- One -->
                 <section id="one" class="wrapper spotlight style1">
                     <div class="inner">
-                        <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Magna arcu feugiat</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -102,7 +142,7 @@
                 </section>
                 <section id="one" class="wrapper spotlight style1">
                     <div class="inner">
-                        <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Magna arcu feugiat</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -115,7 +155,7 @@
                 <!-- Two -->
                 <section id="two" class="wrapper alt spotlight style2">
                     <div class="inner">
-                        <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Tempus adipiscing</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -125,7 +165,7 @@
                 </section>
                 <section id="two" class="wrapper alt spotlight style2">
                     <div class="inner">
-                        <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Tempus adipiscing</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -138,7 +178,7 @@
                 <!-- Three -->
                 <section id="three" class="wrapper spotlight style3">
                     <div class="inner">
-                        <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Nullam dignissim</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
@@ -155,25 +195,25 @@
                         <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
                         <section class="features">
                             <article>
-                                <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                                 <h3 class="major">Sed feugiat lorem</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                 <a href="#" class="special">Learn more</a>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                                 <h3 class="major">Nisl placerat</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                 <a href="#" class="special">Learn more</a>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                                 <h3 class="major">Ante fermentum</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                 <a href="#" class="special">Learn more</a>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
                                 <h3 class="major">Fusce consequat</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                                 <a href="#" class="special">Learn more</a>
@@ -220,6 +260,99 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+        <div class="modal fade" id="quienessomos" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #4c5c96;">
+                    <div class="modal-header" style="    text-align: center;">
+                        <button type="button" class="close" data-dismiss="modal" style="border: none;     width: 14px;    height: 0px;">&times;</button>
+                        <h2 class="modal-title">Quienes Somos</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="links">
+                            <p align="justify">Somos un grupo de profesionales, emprendedores, que decidimos apostar al país y a su gente. Para ello pondremos al servicio de nuestros clientes todos nuestros conocimientos en el área de mercadeo y servicios, poniendo en práctica lo que para nosotros son nuestros estándares de calidad en cada una de las áreas.</p>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="mision" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #4c5c96;">
+                    <div class="modal-header" style="    text-align: center;">
+                        <button type="button" class="close" data-dismiss="modal" style="border: none;     width: 14px;    height: 0px;">&times;</button>
+                         <h2 class="modal-title">Mision</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="links">
+                            <p align="justify">Hacer que nuestros productos comercializados lleguen a las cadenas más importantes del país. Además que tengan presencia en los puntos de venta y zonas en las que consideramos que su posicionamiento será importante para nuestros clientes. Todo esto de la mano con la seriedad, confiabilidad y calidad de servicio que puedan ayudar a crecer a nuestros clientes y a su vez a Mondo Gourmet.</p>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+        <div class="modal fade" id="valores" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #4c5c96;">
+                    <div class="modal-header" style="    text-align: center;">
+                        <button type="button" class="close" data-dismiss="modal" style="border: none;     width: 14px;    height: 0px;">&times;</button>
+                       <h2 class="modal-title">valores</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="links">
+                            <p align="justify">  Mondo Gourmet y sus fundadores profesan valores atados a la familia, honestidad, integridad, ética, amabilidad, seriedad, sentido común, proactividad, educación. Pero en Mondo Gourmet tomamos como bandera La Calidad de Servicio, porque no queremos aceptar que en un país tan noble y rico como este no se pueda volver a tener esa calidad de servicio que hace la diferencia</p>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+        <div class="modal fade" id="objetivos" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #4c5c96; ">
+                    <div class="modal-header" style="    text-align: center;">
+                        <button type="button" class="close" data-dismiss="modal" style="border: none;     width: 14px;    height: 0px;">&times;</button>
+                           <h2 class="modal-title">objetivos</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul >
+                            <ul>
+                                <li>
+                                    <p align="justify">Convertirnos en el referente dentro de el mercado de distribuidoras y comercializadoras en cuanto a calidad de servicio.</p>
+                                </li>
+                                <li>
+                                    <p align="justify">Brindar a nuestros clientes la mejor experiencia en atención y calidad de servicio con alianzas que generen un desarrollo mutuo, soportados en la construcción de vínculos de confianza.</p>
+                                </li>
+                                <li>
+                                    <p align="justify">Respeto y valor a nuestros trabajadores que son el capital más valioso de nuestra organización, otorgándoles el debido reconocimiento como personas dignas y de igual valor y, además, creando un ambiente óptimo para el desarrollo laboral y crecimiento personal y familiar.</p>
+                                </li>
+                                <li>
+                                    <p align="justify">Fortalecer las relaciones con nuestros clientes para alcanzar la mayor flexibilidad de negociación en todas nuestras operaciones.</p>
+                                </li>
+                                <li>
+                                    <p align="justify">Crecer en nuestro portafolio y servicios que ofrecemos a nuestros clientes con la finalidad de consolidarnos como empresa líder en distribución a nivel nacional e internacional.</p>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+     
     <!-- Scripts -->
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>

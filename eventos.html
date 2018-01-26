@@ -13,19 +13,82 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+     <style type="text/css">
+    a{
+        color:white;
+    }
+    .links {
+        list-style: none;
+        margin-bottom: 1.5em;
+        padding: 0;
+    }
+
+    .links li {
+        padding: 0;
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+    }
+
+    .links li a {
+        border-radius: 5px;
+        border: 0;
+        display: block;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-size: 0.8em;
+        font-weight: 200;
+        letter-spacing: 0.1em;
+        line-height: 1.85em;
+        padding: 0.75em 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+    }
+
+    .links li a:hover {
+        background: #45558d;
+    }
+    </style>
 	</head>
 	<body>
 
 		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html"> </a></h1>
-						<nav>
-							<a href="index.html">Home</a>
-						</nav>
-					</header>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="index.html"> </a></h1>
+            <nav>
+                <!-- <a href="#menu">Menu</a> -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style=" background-color: #ffffff00; width: 90px; height: 50px; border-color: white;">Menu</button>
+            </nav>
+        </header>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style="background-color: #4c5c96;     width: 50%;    position: relative;    left: 50%;    margin-left: -25%;">
+                    <div class="modal-header" style="    text-align: center;">
+                        <button type="button" class="close" data-dismiss="modal" style="border: none;     width: 14px;    height: 0px;">&times;</button>
+                        <h2 class="modal-title">Menu</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="nuestros-productos.html">Nuestros Productos</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="nuestros-aliados.html">Nuestros Aliados</a></li>
+                            <li><a data-target="#carousel-vertical" data-slide-to="5">Contactos</a></li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 				<!-- Wrapper -->
 					 <section id="wrapper">
 						<header>

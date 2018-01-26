@@ -57,6 +57,15 @@
     .links li a:hover {
         background: #45558d;
     }
+    html,body{
+    overflow-x: hidden; 
+    color:black; 
+    font-family:'Opens Sans',helvetica;
+    height:100%; 
+    width:101%; 
+    margin: 0px; 
+    padding: 0px; 
+}
     </style>
 </head>
 
@@ -82,12 +91,11 @@
                     </div>
                     <div class="modal-body">
                         <ul class="links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="nuestros-productos.html">Nuestros Productos</a></li>
-                            <li><a href="eventos.html">Eventos</a></li>
-                            <li><a href="nuestros-aliados.html">Nuestros Aliados</a></li>
-                            <li><a href="#">Pedidos On-Line</a></li>
-                            <li><a data-target="#carousel-vertical" data-slide-to="5">Contactos</a></li>
+                            <li><a  data-target="#carousel-vertical" data-slide-to="0">Home</a></li>
+                            <li><a  data-target="#carousel-vertical" data-slide-to="1">Nuestros Productos</a></li>
+                            <li><a  data-target="#carousel-vertical" data-slide-to="2">Eventos</a></li>
+                            <li><a  data-target="#carousel-vertical" data-slide-to="3">Nuestros Aliados</a></li>
+                            <li><a  data-target="#carousel-vertical" data-slide-to="4">Contactos</a></li>
                         </ul>
                     </div>
                     </div>
@@ -101,11 +109,10 @@
     <div class="carousel slide vertical" id="carousel-vertical" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carousel-vertical" data-slide-to="0" class="active" data-placement="left" data-toggle="tooltip" title="Home"></li>
-            <li data-target="#carousel-vertical" data-slide-to="1" data-toggle="tooltip" title="Seccion 1"></li>
-            <li data-target="#carousel-vertical" data-slide-to="2" data-toggle="tooltip" title="Seccion 2"></li>
-            <li data-target="#carousel-vertical" data-slide-to="3" data-toggle="tooltip" title="Seccion 3"></li>
-            <li data-target="#carousel-vertical" data-slide-to="4" data-toggle="tooltip" title="Seccion 4"></li>
-            <li data-target="#carousel-vertical" data-slide-to="5" data-toggle="tooltip" title="contacto"></li>
+            <li data-target="#carousel-vertical" data-slide-to="1" data-toggle="tooltip" title="Nuestros Productos"></li>
+            <li data-target="#carousel-vertical" data-slide-to="2" data-toggle="tooltip" title="Eventos"></li>
+            <li data-target="#carousel-vertical" data-slide-to="3" data-toggle="tooltip" title="Nuestros Aliados"></li>
+            <li data-target="#carousel-vertical" data-slide-to="4" data-toggle="tooltip" title="contacto"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
@@ -119,7 +126,7 @@
     border: none;">
   <ul class="nav navbar-nav" style="position: relative;    left: 50%;    margin-left: -15%;">
     <li><a data-toggle="modal" data-target="#quienessomos" style="    text-decoration: none;    border: none; cursor: pointer;">Quienes Somos</a></li>
-    <li><a data-toggle="modal" data-target="#mision"  style="    text-decoration: none;    border: none; cursor: pointer;">Mision</a></li>
+    <li><a data-toggle="modal" data-target="#mision"  style="    text-decoration: none;    border: none; cursor: pointer;">Misión</a></li>
     <li><a data-toggle="modal" data-target="#valores"  style=" text-decoration: none;    border: none; cursor: pointer;">Valores</a></li>
     <li><a data-toggle="modal" data-target="#objetivos"  style=" text-decoration: none;    border: none; cursor: pointer;">Objetivos</a></li>
   </ul>
@@ -132,95 +139,101 @@
                 <!-- One -->
                 <section id="one" class="wrapper spotlight style1">
                     <div class="inner">
-                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                        <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Magna arcu feugiat</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                            <a href="#" class="special">Learn more</a>
+                            <a href="nuestros-productos.html" class="special">Leer mas...</a>
                         </div>
                     </div>
                 </section>
                 <section id="one" class="wrapper spotlight style1">
                     <div class="inner">
-                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                        <a href="nuestros-productos.html" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Magna arcu feugiat</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                            <a href="#" class="special">Learn more</a>
+                            <a href="nuestros-productos.html" class="special">Leer mas...</a>
                         </div>
                     </div>
                 </section>
-            </div>
-            <div class="item">
                 <!-- Two -->
                 <section id="two" class="wrapper alt spotlight style2">
                     <div class="inner">
-                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                        <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Tempus adipiscing</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                            <a href="#" class="special">Learn more</a>
+                            <a href="nuestros-productos.html" class="special">Leer mas...</a>
                         </div>
                     </div>
                 </section>
                 <section id="two" class="wrapper alt spotlight style2">
                     <div class="inner">
-                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                        <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                         <div class="content">
                             <h2 class="major">Tempus adipiscing</h2>
                             <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                            <a href="#" class="special">Learn more</a>
+                            <a href="nuestros-productos.html" class="special">Leer mas...</a>
                         </div>
                     </div>
                 </section>
             </div>
             <div class="item">
-                <!-- Three -->
-                <section id="three" class="wrapper spotlight style3">
+                <section class="wrapper features">
                     <div class="inner">
-                        <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
-                        <div class="content">
-                            <h2 class="major">Nullam dignissim</h2>
-                            <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                            <a href="#" class="special">Learn more</a>
-                        </div>
-                    </div>
+                        <h1 class="major">Eventos</h1>
+                        <section class="features">
+                            <article>
+                                <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
+                                <h3 class="major">Sed feugiat lorem</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                                <a href="eventos.html" class="special">Leer mas...</a>
+                            </article>
+                            <article>
+                                <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
+                                <h3 class="major">Nisl placerat</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+                                <a href="eventos.html" class="special">Leer mas...</a>
+                            </article>
+                        </section>
+
                 </section>
             </div>
-            <div class="item">
-                <!-- Four -->
+           <div class="item">
+                <!-- tree -->
                 <section id="four" class="wrapper alt style1">
                     <div class="inner">
-                        <h1 class="major">EVENTOS</h1>
+                        <h1 class="major">Nuetros Aliados</h1>
                         <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
                         <section class="features">
                             <article>
-                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                                <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                                 <h3 class="major">Sed feugiat lorem</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                <a href="#" class="special">Learn more</a>
+                                <a href="nuestros-aliados.html" class="special">Leer mas...</a>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                                <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                                 <h3 class="major">Nisl placerat</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                <a href="#" class="special">Learn more</a>
+                                <a href="nuestros-aliados.html" class="special">Leer mas...</a>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                                <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                                 <h3 class="major">Ante fermentum</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                <a href="#" class="special">Learn more</a>
+                                <a href="nuestros-aliados.html" class="special">Leer mas...</a>
                             </article>
                             <article>
-                                <a href="#" class="image"><img src="https://lorempixel.com/800/400/food/1" alt="" /></a>
+                                <a href="#" class="image"><img src="./images/Logo.jpg" alt="" /></a>
                                 <h3 class="major">Fusce consequat</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                                <a href="#" class="special">Learn more</a>
+                                <a href="nuestros-aliados.html" class="special">Leer mas...</a>
                             </article>
                         </section>
                         <ul class="actions">
-                            <li><a href="#" class="button">Browse All</a></li>
+                            <li><a href="#" class="button">Ver Todos</a></li>
                         </ul>
                     </div>
                 </section>
@@ -233,20 +246,20 @@
                         <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
                         <form method="post" action="#">
                             <div class="field">
-                                <label for="name">Name</label>
+                                <label for="name">Nombre</label>
                                 <input type="text" name="name" id="name" />
                             </div>
                             <div class="field">
-                                <label for="email">Email</label>
+                                <label for="email">Correo Electronico</label>
                                 <input type="email" name="email" id="email" />
                             </div>
                             <div class="field">
-                                <label for="message">Message</label>
+                                <label for="message">Mensaje</label>
                                 <textarea name="message" id="message" rows="4"></textarea>
                             </div>
                             <ul class="actions">
                                 <li>
-                                    <input type="submit" value="Send Message" />
+                                    <input type="submit" value="Enviar Mensaje" />
                                 </li>
                             </ul>
                         </form>
@@ -286,7 +299,7 @@
                 <div class="modal-content" style="background-color: #4c5c96;">
                     <div class="modal-header" style="    text-align: center;">
                         <button type="button" class="close" data-dismiss="modal" style="border: none;     width: 14px;    height: 0px;">&times;</button>
-                         <h2 class="modal-title">Mision</h2>
+                         <h2 class="modal-title">Misión</h2>
                     </div>
                     <div class="modal-body">
                         <ul class="links">
